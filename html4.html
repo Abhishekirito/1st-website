@@ -1,0 +1,310 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width ,initial-scale=1.0">
+        <title>Top 5 Highest Grossing Movies</title>
+        <style>
+            *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium';
+    box-sizing: border-box;
+}
+section{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 100px 50px 50px;
+}
+#first{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+#one{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(endgame.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#two{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(avatar.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#three{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(titanic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#four{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(starwars.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#five{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(infinity.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+span{
+    position:absolute;
+    font-style: italic;
+    font-family: 'franklin gothic medium';
+    font-size: 55px;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    left: 3%;
+    top: 19vh;
+}
+#one a{
+    top: 78vh;
+}
+#two a{
+    top: 65vh;
+}
+#three a{
+    top: 65vh;
+}
+a{
+    position: absolute;
+    text-decoration: none;
+    padding: 5px 10px;
+    color: black;
+    font-size: 20px;
+    background-color: white;
+    position: absolute;
+    top: 75vh;
+    left: 5%;
+}
+a:hover{
+    border: 2px solid white;
+    background-color: rgb(0, 110, 255);
+    color: white;
+    transition: 0.3s;
+}
+.block h3{
+    position: absolute;
+    top: 36vh;
+    font-size: 25px;
+    width: 50%;
+    color: white;
+    text-align: left;
+
+}
+#five .box {
+    right: -15px;
+}
+
+.box{
+    position: absolute;
+    top: 52%;
+    right: 15px;
+    width: 210px;
+    height: 300px;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.box img{
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    transition: 0.5s;
+    filter: grayscale(1);
+}
+#two .box img{
+    height: 300px;
+}
+.box:hover img{
+    padding: 0;
+    transform: scale(1);
+    filter: grayscale(0);
+
+}
+
+.box:hover{
+    box-shadow: 0 25px 30px rgba(0, 0, 0, 1);
+}
+.box span{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: -120%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    transition: 0.5s;
+    transform: skewX(5deg);
+}
+.box:hover span{
+    left: 120%;
+}
+
+
+.number{
+    position: absolute;
+    font-family: impact;
+    font-size: 40px;
+    color: white;
+    top: 3vh;
+    left: 3%;
+}
+
+
+
+.title{
+    position: absolute;
+    top: 50vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.title h2{
+    letter-spacing: 2px;
+    text-align: center;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 70px;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+}
+
+@media(max-width:850px) {
+    
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding:0;
+        
+    }
+    .number{
+        left: 50px;
+    }
+    span{
+        top:11%;
+        font-size:40px ;
+        left: 50px;
+    }
+    .block h3{
+        top: 25vh;
+        left: 50px;
+    }
+    #two .box,
+    #three .box{
+        top: 70%;
+    }
+    .box{
+        right: -20px;
+        width: 130px;
+        height: 180px;
+        top: 80%;
+    }
+    a{
+        top: 90vh;
+        left:50px ;
+    }
+    #four a{
+        top: 80vh;
+    }
+ 
+    #three a,
+    #two a{
+        top: 60vh;
+    }
+    
+}
+
+        </style>
+    </head>
+
+    <body>
+
+        <section id="first" >
+            <div class="title">
+                <h2>TOP 5 HIGHEST GROSSING MOVIES</h2>
+            </div>
+        </section>
+        <section id="one">
+            <div class="number"><u>#1</u></div>
+            <span>AVENGERS ENDGAME</span>
+            <div class="block">
+                 <h3>Marvel's "Avengers: Endgame" <u>($2,797,800,564)</u>, the fourth in the "Avengers" franchise, which shattered the record for largest opening weekend of all time, was released in 2019.</h3>
+            </div>
+            <div class="box">
+                <span></span>
+                <img src="endgame1.jpeg">
+            </div>
+            <a href="#">Read More</a>
+        </section>
+
+        <section id="two">
+            <div class="number"><u>#2</u></div>
+            <span>AVATAR</span>
+            <div class="block">
+                <h3>James Cameron's sci-fi fantasy, "Avatar" <u>($2,790,439,000)</u>, starring Sam Worthington and Zoe Saldana, was released in 2009.
+                </h3>
+            </div>
+            <div class="box">
+                <span></span>
+                <img src="avatar1.jpg">
+            </div>
+            <a href="#">Read More</a>
+        </section>
+
+        <section id="three">
+            <div class="number"><u>#3</u></div>
+            <span>TITANIC</span>
+            <div class="block">
+                <h3>James Cameron's film, "Titanic" <u>($2,195,169,696)</u>, starring Leonardo DiCaprio and Kate Winslet, was released in 1997.
+                </h3>
+            </div>
+            <div class="box">
+                <span></span>
+                <img src="titanic1.jpg">
+            </div>
+            <a href="#">Read More</a>
+        </section>
+
+        <section id="four">
+            <div class="number"><u>#4</u></div>
+            <span>STAR WARS EP 7</span>
+            <div class="block">
+                <h3>J.J. Abrams' sci-fi fantasy, "Star Wars: The Force Awakens" <u>($2,068,223,624)</u>, starring John Boyega, Daisy Ridley, Harrison Ford, Adam Driver, Oscar Isaac,and Carrie Fisher, was released in 2015.
+                </h3>
+            </div>
+            <div class="box">
+                <span></span>
+                <img src="starwars1.jpg">
+            </div>
+            <a href="#">Read More</a>
+        </section>
+
+        <section id="five">
+            <div class="number"><u>#5</u></div>
+            <span>AVENGERS INFINITY WAR</span>
+            <div class="block">
+                <h3>Marvel's "Avengers: Infinity War," <u>($2,048,359,754)</u> border: 2px solid white; border: 2px solid white; the third in the "Avengers" franchise, had the highest-grossing domestic opening weekend of all time after its release on April 27, 2018.</h3>
+            </div>
+            <div class="box">
+                <span></span>
+                <img src="infinitywar1.jpg">
+            </div>
+            <a href="#">Read More</a>
+        </section>
+        
+       
+
+    
+    </body>    
+</html>

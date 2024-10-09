@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Services</title>
+
+        <style>
+            *{
+                margin-top: 5px;
+                padding: 0;
+                font-family: 'Franklin Gothic Medium';
+            }
+            h1{
+                letter-spacing: 2px;
+                text-align: center;
+            }
+            .box{
+                position: absolute;
+                top: 52%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                overflow: hidden;
+              
+            }
+            .box h2{
+                position: absolute;
+                margin: 0;
+                top: -100px;
+                padding: 0;
+                width: 100%;
+                text-align: center;
+                color: white;
+                text-shadow: 2px 2px 4px black;
+                transform: translateY(-50%);
+                transition: 0.5s;
+
+
+            }
+            img{
+                border: 3px solid black;
+            }
+            
+            .box:hover h2{
+                top: 160px;
+                transform: translateY(-50%);
+            }
+            .box:hover img{
+                filter: blur(6px);
+            }
+            h3{
+                position: absolute;
+                top: 90%;
+                left: 50%;
+            
+            }
+    
+        </style>
+    </head>
+
+
+    <body>
+        <section>
+            <h1><u>SERVICES</u></h1>
+            <div class="box">
+                <img src="babygroot.gif">
+                <h2>NOT YET STARTED!</h2>
+             </div>
+             <h3>hover me</h3>
+        </section>
+
+        
+
+    </body>    
+</html>

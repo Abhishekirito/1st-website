@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Contact</title>
+        <style>
+            *{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Franklin Gothic Medium';
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(-30deg, #03a9f4 0%, #3a78b7 50%, #262626 50%, #607d8b);
+    filter: hue-rotate(120deg);
+    animation: animate 10s linear infinite;
+}
+@keyframes animate{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+.box{
+    position: relative;
+    padding: 35px;
+    width: 280px;
+    height: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:rgba(225, 225, 225, 0.2) ;
+    border-radius: 6px;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.2);
+}
+
+.box .form{
+    position: relative;
+    width: 100%;
+
+}
+.box .form h2{
+    font-size: 35px;
+    font-family: sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+.box .form .inputbx{
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.box .form .inputbx textarea,
+.box .form .inputbx input{
+    width: 100%;
+    outline: none;
+    border: 2px solid rgba(225, 225, 225, 0.2);
+    font-size: 16px;
+    font-weight: 300;
+    padding: 8px 10px;
+    border-radius: 6px;
+    background: transparent;
+    color: white;
+    box-shadow: inset 0 0 25px rgba(0,0,0,0.2);
+
+}
+
+.box .form .inputbx input::placeholder{
+    color: rgb(179, 171, 171);
+}
+.box .form .inputbx textarea::placeholder{
+    color: rgb(179, 171, 171);
+}
+
+
+
+.box .form .inputbx input[type="submit"]{
+    background: white;
+    color: black;
+    width: 40%;
+    padding: 5px 10px;
+    box-shadow: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 280px;
+    height: 380px;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    transition: 0.5s;
+    overflow: hidden;
+ 
+  
+}
+.container span{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: -120%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: 0.5s;
+    transform: skewX(5deg);
+}
+.container:hover span{
+    left: 120%;
+}
+                                        
+
+        </style>
+    </head>
+
+    <body>
+        <section>
+           <div class="container">
+               <span></span>
+            <div class="box">
+                <div class="form">
+                    <h2>Contact Us</h2>
+                    <form>
+                        <div class="inputbx">
+                            <input type="text" placeholder=" Your Name">
+                        </div>
+                        <div class="inputbx">
+                            <input type="email" placeholder="Your Email">
+                        </div>                
+                        <div class="inputbx">
+                            <textarea name="message" placeholder="your message" rows="5"></textarea>
+                        </div>
+                        <div class="inputbx">
+                            <input type="submit" value="Send">
+                        </div>
+        
+                    </form>
+                </div>
+            </div>
+           </div>
+        </section>
+
+
+
+
+        
+
+    </body>    
+</html>

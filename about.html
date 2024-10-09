@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>about me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+body{
+  padding: 20px;
+  display: grid;
+  height: 100vh;
+  width: 100%;
+  place-items: center;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(aboutme.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+h1{
+    position: relative;
+    top: -30px;
+    color: #fff;
+    text-align: center;
+    font-style: italic;
+    font-size: 50px;
+}
+
+.wrapper .button{
+  display: inline-block;
+  height: 60px;
+  width: 150px;
+  margin: 20px 5px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1):hover{
+    width: 380px;
+}
+.wrapper .button:hover{
+  width: 250px;
+}
+.wrapper .button .icon{
+  display: inline-block;
+  height: 60px;
+  width: 150px;
+  text-align: center;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1):hover .icon{
+    background: #1DA1F2;
+  }
+.wrapper .button:nth-child(2):hover .icon{
+  background: #ffae00;
+}
+.wrapper .button:nth-child(3):hover .icon{
+  background: #ff0000;
+}
+.wrapper .button:nth-child(4):hover .icon{
+  background: #333;
+}
+
+.wrapper .button .icon {
+  font-style: italic;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover .icon {
+  color: #fff;
+}
+.wrapper .button span{
+  font-size: 24px;
+  margin-left: 10px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1) span{
+    color: #1DA1F2;
+  }
+.wrapper .button:nth-child(2) span{
+  color: #ffae00;
+}
+.wrapper .button:nth-child(3) span{
+  color:  #ff0000;
+}
+.wrapper .button:nth-child(4) span{
+  color: #333;
+}
+@media(max-width:650px){
+
+  .wrapper.button .icon{
+    font-size: 20px;
+  }
+}
+
+    </style>
+  </head>
+  <body>
+      <section>
+        <h1><u>ABOUT ME</u></h1>
+        <div class="wrapper">
+            <div class="button">
+                <div id="name" class="icon">NAME</div>
+                    <span>ABHISHEK RANJAN</span>
+                </div>
+                <div class="button">
+                    <div class="icon">CLASS</div>
+                    <span>10 D</span>
+                 </div>
+                <div class="button">
+                    <div class="icon">ROLL NO.</div>
+                    <span>5</span>
+                </div>
+                <div class="button">
+                    <div class="icon">ADM. NO.</div>
+                    <span>10452</span>
+                </div>
+    
+    
+        </div>
+      </section>
+
+
+</body>
+</html>
